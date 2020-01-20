@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="BussenWithNav.Pages.FourTeenpagina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BussenWithNav.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Height="500" Width="800">
+        <TextBlock Text="Probeer 14 te maken" FontWeight="Bold" FontSize="30" TextAlignment="Center"></TextBlock>
+        <TextBlock Text="Resultaat" x:Name="tbResultaat" FontWeight="Bold" FontSize="20" Width="500" Height="50" TextAlignment="Center" Margin="144,48,156,402"></TextBlock>
+        <Button x:Name="btnAddCard" Content="+" Width="80" Height="80" FontSize="40" Background="Green" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Wheat" Foreground="White" FontWeight="Bold" Margin="613,60,0,0" VerticalAlignment="Top" Click="BtnAddCard_Click" />
+        <TextBlock Text="Je ingezette kaarten" FontWeight="Bold" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left" Margin="198,82,0,0"/>
+        <TextBlock Text="Je gekregen kaarten" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="423,187,0,0"/>
+        <TextBlock FontSize="20" Text="Name:" TextAlignment="Center" FontWeight="Bold" Margin="-6,31,732,324" />
+        <TextBlock x:Name="tbName" FontSize="20" TextAlignment="Center" Margin="-2,68,728,397" />
+        <TextBlock FontSize="20" Text="Bedrag:" TextAlignment="Center" FontWeight="Bold" Margin="-2,113,728,242" />
+        <TextBlock x:Name="tbBedrag" FontSize="20" TextAlignment="Center" Margin="-2,154,728,311" />
+        <Image x:Name="imgIngezetteKaart" Margin="241,120,459,280" Height="100" Width="100"/>
+        <GridView x:Name="gvPlayer" Margin="264,234,0,10"></GridView>
+        <TextBlock Text="" x:Name="tbWin" Foreground="Green" FontWeight="Bold" FontSize="25" Height="50" TextAlignment="Center" Margin="4,234.103,541.876,215.896" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform SkewY="0.382" TranslateY="0.743"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock Text="" x:Name="tbLose" Foreground="Red" FontWeight="Bold" FontSize="25" Height="50" TextAlignment="Center" Margin="-2,292,543,158"/>
+    </Grid>
+</Page>

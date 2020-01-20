@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="BussenWithNav.Pages.GuessHighLowpagina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BussenWithNav.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Height="500" Width="800">
+        <TextBlock Text="Nieuwe kaart hoger of lager?" FontWeight="Bold" FontSize="30" TextAlignment="Center"></TextBlock>
+        <TextBlock Text="Resultaat" x:Name="tbResultaat" FontWeight="Bold" FontSize="20" Width="500" Height="50" TextAlignment="Center" Margin="144,136,156,314"></TextBlock>
+        <TextBlock x:Name="tbWinOrLose" FontWeight="Bold" FontSize="20" Height="50" TextAlignment="Center" Margin="645,136,90,314"/>
+        <Button x:Name="btnLager" Content="Lager" Width="133" Height="71" FontSize="40" Background="Red" BorderBrush="Wheat" Foreground="White" FontWeight="Bold" Margin="185,60,0,0" VerticalAlignment="Top" Click="BtnLager_Click"  />
+        <Button x:Name="btnHoger" Content="Hoger" Width="140" Height="71" FontSize="40" Background="Green" BorderBrush="Wheat" Foreground="White" FontWeight="Bold"  Click="BtnHoger_Click" Margin="467,60,0,0" VerticalAlignment="Top" />
+        <Image x:Name="imgDropstackNewCard" Height="200" Width="150" Margin="464,190,186,10"></Image>
+        <TextBlock Text="Oude Kaart" FontWeight="Bold" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Left" Margin="198,200,0,0"/>
+        <TextBlock Text="Nieuwe Kaart" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="475,200,0,0"/>
+        <TextBlock FontSize="20" Text="Name:" TextAlignment="Center" FontWeight="Bold" Margin="-6,31,732,324" />
+        <TextBlock x:Name="tbName" FontSize="20" TextAlignment="Center" Margin="-2,68,728,287" />
+        <TextBlock FontSize="20" Text="Bedrag:" TextAlignment="Center" FontWeight="Bold" Margin="-2,113,728,242" />
+        <TextBlock x:Name="tbBedrag" FontSize="20" TextAlignment="Center" Margin="-2,154,728,201" />
+        <Image x:Name="imgDropstackOldCard" Height="200" Width="150" Margin="177,190,473,10"/>
+    </Grid>
+</Page>
